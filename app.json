@@ -1,0 +1,12 @@
+{
+  "name": "react-native-2021-st",
+  "displayName": "react-native-2021-st",
+  "expo": {
+    "name": "react-native-2021-st",
+    "slug": "react-native-2021-st",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
