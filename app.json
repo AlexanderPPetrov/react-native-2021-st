@@ -2,11 +2,32 @@
   "name": "react-native-2021-st",
   "displayName": "react-native-2021-st",
   "expo": {
-    "name": "react-native-2021-st",
-    "slug": "react-native-2021-st",
+    "name": "Каталог с филми",
+    "slug": "movie-catalogue",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#08487a"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#08487a",
+      "translucent": false
+    },
+    "android": {
+      "package": "movie.catalogue",
+      "versionCode": 4,
+      "splash": {
+        "xxxhdpi": "./assets/splash.png",
+        "resizeMode": "native",
+        "backgroundColor": "#08487a"
+      },
+      "permissions": [
+        "READ_PHONE_STATE"
+      ]
+    }
   }
 }
