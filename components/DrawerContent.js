@@ -22,6 +22,11 @@ export default function DrawerContent(props) {
             title: 'Сериали',
             icon: 'ios-tv-outline',
             screen: 'TVSeries'
+        },
+        {
+            title: 'Настройки',
+            icon: 'cog-outline',
+            screen: 'Settings'
         }
     ];
 

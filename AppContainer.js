@@ -5,6 +5,7 @@ import HomeScreen from './screens/Home';
 import MoviesScreen from './screens/Movies';
 import TVSeriesScreen from './screens/TVSeries';
 import MovieDetailsScreen from './screens/MovieDetails';
+import SettingsScreen from './screens/Settings';
 import { navigationRef } from './RootNavigation';
 
 import DrawerContent from './components/DrawerContent';
@@ -30,6 +31,10 @@ export default function AppContainer() {
         {
             name: "MovieDetails",
             component: MovieDetailsScreen,
+        },
+        {
+            name: "Settings",
+            component: SettingsScreen,
         }
     ];
 

@@ -10,5 +10,14 @@ function movies(state = [], action) {
             return state;
     }
 }
+function movie(state = {}, action) {
+    switch(action.type) {
+        case actions.SET_MOVIE: {
+            return {...action.payload}
+        }
+        default:
+            return state;
+    }
+}
 
-export default combineReducers({movies});
+export default combineReducers({movies, movie});

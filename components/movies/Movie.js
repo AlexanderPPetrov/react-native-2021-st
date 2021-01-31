@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
 import { Card, COLOR } from 'react-native-material-ui';
 import { navigate } from '../../RootNavigation';
-
+import constants from '../../constants';
 
 export default function MovieItem(props) {
 
@@ -16,7 +16,7 @@ export default function MovieItem(props) {
     return (
         <Card style={{container: styles.movieContainer}} onPress={navigateToMovie}>
             <Image style={styles.movieImage}
-                   source={{uri: props.poster_path}}
+                   source={{uri: `${constants.posterPath}${props.poster_path}`}}
             ></Image>
             <View style={styles.descriptionContainer}>
                 <Text style={styles.title}>{props.title}</Text>

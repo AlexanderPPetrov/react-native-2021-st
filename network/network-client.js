@@ -53,6 +53,7 @@ const networkClient = {
             api_key: constants.apiKey
         });
 
+        console.log(options);
         return new Promise((resolve, reject) => {
             axios(data)
                 .then((response) => {
