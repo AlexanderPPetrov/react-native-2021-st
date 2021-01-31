@@ -1,8 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from './screens/Home';
-import NotificationsScreen from './screens/Notifications';
+import MoviesScreen from './screens/Movies';
+import TVSeriesScreen from './screens/TVSeries';
+import { navigationRef } from './RootNavigation';
+
+import DrawerContent from './components/DrawerContent';
 
 const Drawer = createDrawerNavigator();
 
@@ -15,8 +19,12 @@ export default function AppContainer() {
             component: HomeScreen,
         },
         {
-            name: "Notifications",
-            component: NotificationsScreen,
+            name: "Movies",
+            component: MoviesScreen,
+        },
+        {
+            name: "TVSeries",
+            component: TVSeriesScreen,
         }
     ];
 
@@ -30,8 +38,9 @@ export default function AppContainer() {
     };
 
     return (
-        <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Home">
+        <NavigationContainer ref={navigationRef}>
+            <Drawer.Navigator initialRouteName="Home"
+                              drawerContent={props => <DrawerContent {...props} />}>
                 {getScreens()}
             </Drawer.Navigator>
         </NavigationContainer>

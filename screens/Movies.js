@@ -4,11 +4,11 @@ import Layout from '../layouts/Default';
 
 
 
-export default function NotificationsScreen(props) {
+export default function MoviesScreen(props) {
     return (
-        <Layout title={"Notifications"} drawerNavigation={props.navigation}>
+        <Layout title={"Movies"} drawerNavigation={props.navigation}>
             <View>
-                <Text>Notifications Screen</Text>
+                <Text>Movies Screen</Text>
             </View>
         </Layout>
     );

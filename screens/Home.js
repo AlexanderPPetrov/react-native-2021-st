@@ -10,17 +10,8 @@ export default function HomeScreen(props) {
         <Layout title={"Home"} drawerNavigation={props.navigation}>
             <View>
                 <Text>Home screen</Text>
-                <Image style={styles.logo}
-                    source={require('../assets/images/logo.png')}
-                ></Image>
             </View>
         </Layout>
     );
 }
 
-const styles = StyleSheet.create({
-    logo: {
-        width: 50,
-        height: 50,
-    }
-});
