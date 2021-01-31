@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from './screens/Home';
 import MoviesScreen from './screens/Movies';
 import TVSeriesScreen from './screens/TVSeries';
+import MovieDetailsScreen from './screens/MovieDetails';
 import { navigationRef } from './RootNavigation';
 
 import DrawerContent from './components/DrawerContent';
@@ -25,6 +26,10 @@ export default function AppContainer() {
         {
             name: "TVSeries",
             component: TVSeriesScreen,
+        },
+        {
+            name: "MovieDetails",
+            component: MovieDetailsScreen,
         }
     ];
 

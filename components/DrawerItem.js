@@ -18,7 +18,6 @@ export default function DrawerItem(props) {
     };
 
     const onDrawerItemPress = () => {
-        console.log(props.screen);
         navigate(props.screen)
     };
 

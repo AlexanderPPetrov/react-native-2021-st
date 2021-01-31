@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import Layout from '../layouts/Default';
-
-
+import ScreenTitle from "../components/ScreenTitle";
 
 export default function HomeScreen(props) {
 
     return (
-        <Layout title={"Home"} drawerNavigation={props.navigation}>
+        <Layout title={"Начало"} drawerNavigation={props.navigation}>
             <View>
-                <Text>Home screen</Text>
+                <ScreenTitle title={"Добре дошли"}></ScreenTitle>
             </View>
         </Layout>
     );
